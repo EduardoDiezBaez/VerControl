@@ -1,0 +1,68 @@
+Shiny's Biorhythm
+========================================================
+author: by Eduardo B. Díez
+date: Developing Data Products - Peer Assessments Project
+
+Shiny's Biorhythm: The application
+========================================================
+
+**Shiny's Biorhythm** is a shiny app to complete the project for the course **Developing Data Products**. The application includes many features among which are some that develop below.
+
+The application shows several modifications in the html stile of the default shiny widgets. Good examples are the background color changed from gray to pink and the headers used inside the `sidebarPanel`, all of them done with the `HTML()` function. Also there are some other HTML editions as the separator lines in both the `sidepanel` as in the `mainpanel`.
+
+In the `sidepanel()`, from the `ui.R file`, are defined
+<br>
+<hr>
+
+Slide 2
+========================================================
+title: false
+
+three inputs. Two of them of type  `dateInput()` to introduce the birthday or stating point of the calculations and the one for the date that correspond with our interest point of the prediction usually the current day. 
+
+The way to introduce the date is quite simple; once click in the input area a window-calendar is displayed where the user can click at the two lateral arrows to get a fast displacement between the months one by one.
+
+In addition, by clicking on the year number, changes the year one by one, but one more click on the year number will produce to change from one decade to the next, getting a faster displacement. Once selected the year, the window-calendar shows the months and after selecting the month, all the days are shown to choose one. 
+<hr>
+
+Slide 3
+========================================================
+title: false
+
+The last entry corresponds to the number of days to be displayed on the x-axis in the plot, usually a week ahead. To change the value user move the mark from side to side, from a minimum of three to a maximum of eleven.
+
+All three previous entries, from `ui.R` are used re-actively in the calculations in `server.R` and the results shown in the plot. Therefore, a change in any of the three inputs will produce a change in the plot. 
+
+Also three formulas are calculated and displayed in the plot as three lines. Each one responds to a sin curve form of the type $sin(\frac{2 \pi T}{K})$ where $T \space$ is the amount of days between the two input dates and $K \space$ is a constant  with a different value for each biocurve.
+<br>
+<hr>
+
+Shiny's Biorhythm: The documentation
+========================================================
+
+The documentation has only one chunk with R code that makes use of the function `shinyAppDir()` in order to embed the entire application inside the own document in the next slide, making it really interactive. 
+
+The R markdown source code that produce this presentation ---the one you're reading now--- and also the R code from the `ui.R` and `server.R` files, both are fully commented and they must be considered as part of the documentation of the whole project and they are accessible ---the sources--- in this [GitHub repository](https://github.com/EduardoDiezBaez/VerControl). 
+
+Both the application as well as the html slides documentation 
+<hr>
+
+Slide 5
+========================================================
+title: false
+
+are running and accessible directly in the `shinyapps.io` 
+server: <a href="http://turpial.shinyapps.io/VerControl/">The shiny application</a> and <a href="http://turpial.shinyapps.io/SlidesVerControl/SlidesVerControl.Rmd#1">The IOSlides documentation</a> but also in <a href="http://turpiales.github.io/Biorhythm.html">RStudio Presentation</a> format. Thee latter without any kind of interactivity but to stick the project indications. That is the reason for the next chunk, that has no sense but was required.
+
+```{r Show pi, echo=TRUE, eval=TRUE}
+pi
+```
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<hr>
