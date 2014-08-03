@@ -24,7 +24,7 @@ shinyUI(fluidPage(
               label = "The day of your birthday (do not lie)",
               start = "1900-01-01",
               max = Sys.Date(),
-              value = "1983-09-15" # for some reason the date drop 1 day down
+              value = "1983-09-14"
     ),
     
     br(),
