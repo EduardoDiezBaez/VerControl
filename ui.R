@@ -17,14 +17,14 @@ shinyUI(fluidPage(
     
     br(), br(),
     
-    HTML("Peer Assessments project by Eduardo B. Díez"),
+    HTML("Peer Assessments project by Eduardo B. Dí­ez"),
     hr(),
     h3("",a("Input panel")),
     dateInput(inputId = "birthday",
               label = "The day of your birthday (do not lie)",
               start = "1900-01-01",
               max = Sys.Date(),
-              value = "1983-09-14"
+              value = "1983-09-14" # for some reason the date drop 1 day down
     ),
     
     br(),
@@ -54,6 +54,8 @@ shinyUI(fluidPage(
     h4("A little of history . . . "),
     h5("The practice of consulting biorhythms was popularized in the 70s through a series of books written by Bernard Gittelson, among which are Biorhythm - A Personal Science (Biorhythm - A Personal Science) Biorhythm Charts of the Famous and Infamous ( Letters biorhythmic famous and infamous) and Biorhythm Sports Forecasting (sports Forecast by biorhythms). Gittelson's company, Biorhytm Computers Inc., earned money by selling biorhythm calculators and personalized letters biorhythmic yet never anything in predicting sports scores." , 
        a("(Wikipedia)", href="http://es.wikipedia.org/wiki/Biorritmo")),
+    
+  
     h6("(It should be remembered that this prediction is free. Also, the author is not liable for any collateral damage by misuse from your side. You could read the", 
        a("  ioslides RStudio interactive style presentation ", href="http://turpial.shinyapps.io/SlidesVerControl/SlidesVerControl.Rmd#1"), "about this application.)"),
     
